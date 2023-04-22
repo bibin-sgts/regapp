@@ -1,0 +1,35 @@
+<h2>Register</h2>
+<form (submit)="onSubmit()">
+  <div>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" [(ngModel)]="firstName" name="firstName" required>
+  </div>
+  <div>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" [(ngModel)]="lastName" name="lastName" required>
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" [(ngModel)]="email" name="email" required>
+  </div>
+  <div>
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" [(ngModel)]="phone" name="phone" required>
+  </div>
+  <div>
+    <label for="gender">Gender:</label>
+    <select id="gender" [(ngModel)]="gender" name="gender" required>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+  </div>
+  <div>
+    <label for="password1">Password:</label>
+    <input type="password" id="password1" [(ngModel)]="password1" name="password1" required>
+  </div>
+  <div>
+    <label for="password2">Confirm Password:</label>
+    <input type="password" id="password2" [(ngModel)]="password2" name="password2" required>
+  </div>
+  <button type="submit">Register</button>
+</form>
